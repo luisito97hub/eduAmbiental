@@ -1,0 +1,13 @@
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+:hover → cuando pasas el cursor.
+
+translateY(-8px) → levanta el elemento 8 píxeles.
+
+transition → hace que el movimiento sea suave.
