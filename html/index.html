@@ -178,6 +178,34 @@
               </button>
             </div>
           </div>
+
+          <div class="reef-game-card" aria-labelledby="reef-game-title">
+            <div class="reef-game-heading">
+              <p class="eyebrow eyebrow-dark">Reto exprés</p>
+              <h3 id="reef-game-title">Limpia el arrecife</h3>
+              <p>
+                Recoge los residuos antes de que se acabe el tiempo. Toca los
+                animales o el coral y perderás unos segundos.
+              </p>
+            </div>
+            <div class="reef-game-stats" aria-label="Marcador del juego">
+              <div>
+                <span>Residuos recogidos</span>
+                <strong id="reef-game-score">0 de 6</strong>
+              </div>
+              <div>
+                <span>Tiempo</span>
+                <strong id="reef-game-time">30 s</strong>
+              </div>
+            </div>
+            <div class="reef-game-board" id="reef-game-board" aria-label="Objetos en el arrecife"></div>
+            <p class="reef-game-status" id="reef-game-status" role="status" aria-live="polite">
+              Pulsa “Empezar” para jugar. ¡Recoge los residuos y deja tranquila la vida marina!
+            </p>
+            <button class="button button-primary reef-game-start" id="reef-game-start" type="button">
+              Empezar <span aria-hidden="true">→</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -216,6 +244,7 @@
       <span class="copyright">© 2026 Arrecifes de Nicaragua</span>
     </footer>
     <script src="../js/quiz.js" defer></script>
+    <script type="module" src="../js/reef-game.js"></script>
     <script
       src="https://giscus.app/client.js"
       data-repo="luisito97hub/eduAmbiental"

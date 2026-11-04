@@ -611,6 +611,128 @@ a:focus-visible {
   line-height: 1.7;
 }
 
+.reef-game-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px 40px;
+  padding: 30px;
+  background: var(--white);
+  box-shadow: 0 8px 26px rgb(22 57 57 / 7%);
+}
+
+.reef-game-heading h3 {
+  margin-top: 10px;
+  color: var(--deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.reef-game-heading > p:not(.eyebrow) {
+  max-width: 560px;
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.reef-game-stats {
+  display: flex;
+  gap: 24px;
+}
+
+.reef-game-stats div {
+  display: grid;
+  gap: 5px;
+}
+
+.reef-game-stats span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.reef-game-stats strong {
+  color: var(--deep);
+  font-size: 18px;
+}
+
+.reef-game-board {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.reef-game-tile {
+  min-height: 94px;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 7px;
+  padding: 10px 6px;
+  border: 1px solid #d5e2df;
+  border-radius: 4px;
+  background: #f3f8f6;
+  color: var(--deep);
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  text-align: center;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.reef-game-tile:hover:not(:disabled) {
+  transform: translateY(-2px);
+  border-color: #168a80;
+  background: #e8f7f2;
+}
+
+.reef-game-tile:focus-visible,
+.reef-game-start:focus-visible {
+  outline: 3px solid var(--aqua);
+  outline-offset: 3px;
+}
+
+.reef-game-tile:disabled {
+  cursor: default;
+}
+
+.reef-game-tile[data-state="collected"] {
+  border-color: #168a62;
+  background: #edf8f1;
+  opacity: 0.65;
+}
+
+.reef-game-tile[data-state="respect"] {
+  border-color: #bd8a38;
+  background: #fff8e9;
+}
+
+.reef-game-icon {
+  font-size: 27px;
+  line-height: 1;
+}
+
+.reef-game-status {
+  min-height: 22px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.reef-game-start {
+  justify-self: end;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.reef-game-start:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
 .comments-section {
   padding: 91px 0 100px;
   background: var(--paper);
@@ -834,6 +956,20 @@ a:focus-visible {
   .quiz-layout {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .reef-game-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 22px;
+  }
+
+  .reef-game-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reef-game-start {
+    justify-self: stretch;
   }
 
   .quiz-card {
