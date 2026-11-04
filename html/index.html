@@ -191,49 +191,15 @@
               nuestra costa Caribe? Comparte tus ideas con la comunidad.
             </p>
             <p class="moderation-note">
-              Los comentarios se publicarán después de ser revisados. Puedes
-              usar un seudónimo; no compartas datos personales.
+              Para comentar necesitas iniciar sesión con GitHub. Los comentarios
+              son públicos y puedes usar un seudónimo.
             </p>
           </div>
 
           <div class="comments-panel">
-            <form class="comment-form" id="comment-form">
-              <label for="comment-name">Tu nombre</label>
-              <input
-                id="comment-name"
-                name="name"
-                type="text"
-                maxlength="50"
-                autocomplete="name"
-                required
-              />
-
-              <label for="comment-message">Tu comentario</label>
-              <textarea
-                id="comment-message"
-                name="message"
-                rows="4"
-                maxlength="1000"
-                required
-              ></textarea>
-
-              <div class="comment-form-footer">
-                <span>Máximo 1000 caracteres</span>
-                <button class="button button-primary" type="submit">
-                  Enviar comentario <span aria-hidden="true">→</span>
-                </button>
-              </div>
-              <p class="comment-status" id="comment-form-status" role="status" aria-live="polite">
-                Configura el servicio de comentarios para habilitar los envíos.
-              </p>
-            </form>
-
             <div class="published-comments">
               <h3>Comentarios de la comunidad</h3>
-              <p class="comment-list-status" id="comment-list-status" role="status" aria-live="polite">
-                Los comentarios aprobados aparecerán aquí.
-              </p>
-              <ol class="comment-list" id="comment-list" aria-label="Comentarios aprobados"></ol>
+              <div class="giscus"></div>
             </div>
           </div>
         </div>
@@ -249,8 +215,22 @@
       <p class="creators">Creada por Marvin Solis, Luis Gonzalez  y Kevin Cisneros</p>
       <span class="copyright">© 2026 Arrecifes de Nicaragua</span>
     </footer>
-    <script src="../js/comments-config.js" defer></script>
-    <script src="../js/comments.js" defer></script>
     <script src="../js/quiz.js" defer></script>
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="luisito97hub/eduAmbiental"
+      data-repo-id="R_kgDOVi2ztw"
+      data-category="General"
+      data-category-id="DIC_kwDOVi2zt84DKYlt"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="light"
+      data-lang="es"
+      crossorigin="anonymous"
+      async
+    ></script>
   </body>
 </html>

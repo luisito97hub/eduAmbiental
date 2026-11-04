@@ -646,83 +646,10 @@ a:focus-visible {
 }
 
 .comments-panel {
+  min-width: 0;
   padding: 30px;
   background: var(--white);
   box-shadow: 0 8px 26px rgb(22 57 57 / 5%);
-}
-
-.comment-form {
-  display: grid;
-  gap: 10px;
-}
-
-.comment-form label {
-  margin-top: 8px;
-  color: var(--deep);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.comment-form input,
-.comment-form textarea {
-  width: 100%;
-  padding: 12px 13px;
-  border: 1px solid #d5e2df;
-  border-radius: 3px;
-  background: #fcfdfc;
-  color: var(--ink);
-  font: inherit;
-  font-size: 14px;
-}
-
-.comment-form textarea {
-  min-height: 115px;
-  resize: vertical;
-}
-
-.comment-form input:focus,
-.comment-form textarea:focus {
-  border-color: #168a80;
-  outline: 2px solid rgb(85 213 194 / 25%);
-}
-
-.comment-form-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 7px;
-}
-
-.comment-form-footer > span {
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.comment-form .button {
-  cursor: pointer;
-  font-family: inherit;
-}
-
-.comment-form .button:disabled {
-  cursor: not-allowed;
-  opacity: 0.65;
-}
-
-.comment-status,
-.comment-list-status {
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.comment-status[data-state="error"] {
-  color: #a33131;
-}
-
-.comment-status[data-state="success"] {
-  color: #087c56;
 }
 
 .published-comments {
@@ -737,45 +664,6 @@ a:focus-visible {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 21px;
   font-weight: 400;
-}
-
-.comment-list {
-  display: grid;
-  gap: 12px;
-  margin-top: 15px;
-  list-style: none;
-}
-
-.comment-item {
-  padding: 15px;
-  border-left: 2px solid var(--aqua);
-  background: #f5f8f6;
-}
-
-.comment-item-header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 5px 12px;
-  margin-bottom: 7px;
-}
-
-.comment-item-header strong {
-  color: var(--deep);
-  font-size: 13px;
-}
-
-.comment-item time {
-  color: var(--muted);
-  font-size: 10px;
-}
-
-.comment-item p {
-  color: #435c5d;
-  font-size: 13px;
-  line-height: 1.7;
-  overflow-wrap: anywhere;
 }
 
 .site-footer {
