@@ -733,6 +733,49 @@ a:focus-visible {
   opacity: 0.7;
 }
 
+.video-section {
+  padding: 91px 0 100px;
+  background: #edf6f3;
+}
+
+.video-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.video-copy h2 {
+  margin-top: 17px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 4vw, 46px);
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.video-copy > p:not(.eyebrow) {
+  margin-top: 17px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.video-card {
+  min-width: 0;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0 8px 26px rgb(22 57 57 / 5%);
+}
+
+.video-player {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  border-radius: 8px;
+  background: #0d2d32;
+}
+
 .comments-section {
   padding: 91px 0 100px;
   background: var(--paper);
@@ -974,6 +1017,19 @@ a:focus-visible {
 
   .quiz-card {
     padding: 22px;
+  }
+
+  .video-section {
+    padding: 72px 0 78px;
+  }
+
+  .video-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .video-card {
+    padding: 16px;
   }
 
   .comments-section {
